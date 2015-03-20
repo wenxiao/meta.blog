@@ -3,9 +3,28 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Archives: 2015 | WenX</title>
+  <title>数学公式 | WenX</title>
   <meta name="author" content="WenX">
 
+  
+  <meta name="description" content="在hexo中插入数学公式
+使用Google Chart API
+Google Chart API可以直接将
+调用方式如下：
+1&amp;lt;img src=&quot;http://chart.apis.google.com/chart?cht=tx&amp;chl=E=mc^2&quot; /&amp;gt;
+
+效果如下：
+公式文本混排： 
+其实可以使用hexo配套的方式显示图片：下面是带标题的显示方式：
+1![E=mc^2](http://chart.apis.google.com/chart?cht=tx&amp;chl=E=mc^2)
+
+其中方框内的是图片的标注，括号内的是图片的链接，显示效果如下：
+
+将标题置空也可以当做行内公式进行显示：
+1质能方程![](http://chart.apis.google.com/chart?cht=tx&amp;chl=E=mc^2)不是我发明的。
+
+显示效果如下：
+质能方程不是我发明的。">
   
   
 
@@ -38,21 +57,7 @@
     
   </ul>
 </nav></header>
-  <div id="content" class="inner">
-
-<header id="archive-header">
-  <h1 class="alignleft">Archives: 2015</h1>
-  <div class="search alignright">
-    <form action="http://google.com/search" method="get" accept-charset="utf-8">
-      <input type="search" name="q" results="0" placeholder="Search">
-      <input type="hidden" name="q" value="site:wenx.cc">
-    </form>
-  </div>
-</header>
-
-
-  
-    <article class="post">
+  <div id="content" class="inner"><article class="post">
   
     <div class="gallery">
   <div class="photoset">
@@ -69,7 +74,7 @@
   <header>
     
   
-    <h1 class="title"><a href="/2015/02/17/Math-Content/">数学公式</a></h1>
+    <h1 class="title">数学公式</h1>
   
 
     <time datetime="2015-02-17T13:06:37.000Z">
@@ -96,6 +101,23 @@
 
 <p>显示效果如下：</p>
 <p>质能方程<img src="http://chart.apis.google.com/chart?cht=tx&amp;chl=E=mc^2" alt="">不是我发明的。</p>
+<a id="more"></a>
+<h1 id="使用MathJax库">使用MathJax库</h1>
+<p>与Latex相同，可以用$表示行内公式</p>
+<p>可以使用$$表示整行公式</p>
+<figure class="highlight tex"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">质能守恒方程可以用一个很简洁的方程式 <span class="formula">$E=mc^2$</span> 来表达</div></pre></td></tr></table></figure>
+
+<p>质能守恒方程可以用一个很简洁的方程式 $E=mc^2$ 来表达</p>
+<figure class="highlight tex"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="formula">$$<span class="command">\sum</span>_<span class="special">{</span>i=1<span class="special">}</span>^n a_i=0$$</span></div></pre></td></tr></table></figure>
+
+<p>$$\sum_{i=1}^n a_i=0$$</p>
+<p>可以看出，使用MathJax库以后，数学公式都是以字符的形式进行显示的，不过如果复制到其他地方的话，可能会导致公式显示不正常。Evernote直接剪藏的话似乎虽然字体不对，但是公式的上标下标什么的还是正确的，膜拜下Evernote~</p>
+<p>参考文献<a href="http://wuchong.me/blog/2014/03/14/use-latex-in-blog/" target="_blank" rel="external">在博客上写LaTex数学公式</a>中还有一条公式<code>$$\sum^{j-1}_{k=0}{\widehat{\gamma}_{kj} z_k}$$</code>显示并不正常，在原文中其代码与实际显示的公式对不上号，不知是否是’’\widehat’’太少见的原因，导致显示并不正常。这可能是MathJax对部分的tex语法支持不完善导致的。</p>
+<h1 id="参考文献">参考文献</h1>
+<ul>
+<li><a href="http://wuchong.me/blog/2014/03/14/use-latex-in-blog/" target="_blank" rel="external">在博客上写LaTex数学公式</a></li>
+<li><a href="http://zipperary.com/categories/hexo/" target="_blank" rel="external">hexo系列教程</a></li>
+</ul>
 
     
     
@@ -110,72 +132,7 @@
     
   </div>
   
-</article>
-  
-    <article class="post">
-  
-    <div class="gallery">
-  <div class="photoset">
-    
-      <img src="">
-    
-  </div>
-  <div class="control">
-    <div class="prev"></div>
-    <div class="next"></div>
-  </div>
-</div>
-  
-  <header>
-    
-  
-    <h1 class="title"><a href="/2015/02/16/hello-world/">Hello World</a></h1>
-  
-
-    <time datetime="2015-02-17T04:23:59.000Z">
-  <span class="day">16</span><span class="month">Feb</span>
-</time>
-  </header>
-  <div class="entry-content">
-    
-      <p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">trobuleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick_Start">Quick Start</h2>
-<h3 id="Create_a_new_post">Create a new post</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-
-<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run_server">Run server</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-
-<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate_static_files">Generate static files</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-
-<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy_to_remote_sites">Deploy to remote sites</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-
-<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-    
-    
-    <footer class="meta">
-      
-      
-      
-    </footer>
-    
-  </div>
-  
-</article>
-  
-
-  <nav id="pagenavi">
-  
-  
-  <div class="clearfix"></div>
-</nav>
-</div>
+</article></div>
   <footer id="footer" class="inner"><div class="social alignright">
   
   

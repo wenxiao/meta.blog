@@ -14,6 +14,18 @@
   <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
   
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-38280548-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
 </head>
 
 <body>
@@ -27,6 +39,66 @@
   </ul>
 </nav></header>
   <div id="content" class="inner">
+  <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <header>
+    
+  
+    <h1 class="title"><a href="/2015/02/17/Math-Content/">数学公式</a></h1>
+  
+
+    <time datetime="2015-02-17T13:06:37.000Z">
+  <span class="day">17</span><span class="month">Feb</span>
+</time>
+  </header>
+  <div class="entry-content">
+    
+      <p>在hexo中插入数学公式</p>
+<h1 id="使用Google_Chart_API">使用Google Chart API</h1>
+<p>Google Chart API可以直接将</p>
+<p>调用方式如下：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="title">img</span> <span class="attribute">src</span>=<span class="value">"http://chart.apis.google.com/chart?cht=tx&chl=E=mc^2"</span> /&gt;</span></div></pre></td></tr></table></figure>
+
+<p>效果如下：</p>
+<p>公式文本混排：<img src="http://chart.apis.google.com/chart?cht=tx&chl=E=mc^2"> </p>
+<p>其实可以使用hexo配套的方式显示图片：下面是带标题的显示方式：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">![<span class="link_label">E=mc^2</span>](<span class="link_url">http://chart.apis.google.com/chart?cht=tx&chl=E=mc^2</span>)</div></pre></td></tr></table></figure>
+
+<p>其中方框内的是图片的标注，括号内的是图片的链接，显示效果如下：</p>
+<p><img src="http://chart.apis.google.com/chart?cht=tx&amp;chl=E=mc^2" alt="E=mc^2"></p>
+<p>将标题置空也可以当做行内公式进行显示：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">质能方程![](http://chart.apis.google.com/chart?<span class="variable">cht=</span>tx&<span class="variable">chl=</span><span class="variable">E=</span>mc^<span class="number">2</span>)不是我发明的。</div></pre></td></tr></table></figure>
+
+<p>显示效果如下：</p>
+<p>质能方程<img src="http://chart.apis.google.com/chart?cht=tx&amp;chl=E=mc^2" alt="">不是我发明的。</p>
+
+    
+    
+    <footer class="meta">
+      
+      
+  <div class="tags">
+<a href="/tags/hexo-tex/">hexo tex</a></div>
+
+      
+    </footer>
+    
+  </div>
+  
+</article>
+
   <article class="post">
   
     <div class="gallery">
@@ -124,5 +196,25 @@
   <canvas></canvas>
 </div>
 <script src="/js/phasebeam.js"></script>
+
+<script type="text/x-mathjax-config"> 
+MathJax.Hub.Config({ 
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]} 
+}); 
+</script>
+<script type="text/javascript"
+   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-38280548-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
 </body>
 </html>
